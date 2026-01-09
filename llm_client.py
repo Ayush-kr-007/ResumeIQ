@@ -1,17 +1,19 @@
-import requests
+from transformers import pipeline
 
-OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
-MODEL = "phi3:mini"
+# Lightweight + more stable than gpt2
+_generator = pipeline(
+    "text-generation",
+    model="distilgpt2"
+)
 
 def call_llm(prompt: str) -> str:
-    response = requests.post(
-        OLLAMA_URL,
-        json={
-            "model": MODEL,
-            "prompt": prompt,
-            "stream": False,
-            "options": {"temperature": 0}
-        }
+    result = _generator(
+        prompt,
+        max_new_tokens=120,
+        do_sample=False,
+        truncation=True
     )
-    response.raise_for_status()
-    return response.json()["response"]
+
+    # Remove prompt echo (GPT-2 problem)
+    text = result[0]["generated_text"]
+    return text.replace(prompt, "").strip()

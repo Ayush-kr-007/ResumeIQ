@@ -189,3 +189,9 @@ if st.session_state.results:
                         unsafe_allow_html=True
                     )
 
+        # 👇 DISCLAIMER APPEARS LAST (after roadmap)
+        st.info(
+            "ℹ️ The explanation and roadmap above are generated using a "
+            "logic-driven, rule-based approach to ensure transparency and reliability. "
+            "The system architecture supports optional LLM integration when available."
+        )
