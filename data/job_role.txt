@@ -1,0 +1,64 @@
+job_roles_skills = {
+    "Data Analyst": [
+        "python", "sql", "excel", "pandas", "numpy",
+        "data cleaning", "data visualization",
+        "matplotlib", "seaborn", "power bi", "tableau",
+        "statistics", "dashboard", "reporting"
+    ],
+
+    "Data Scientist": [
+        "python", "r", "sql", "pandas", "numpy",
+        "machine learning", "deep learning",
+        "scikit-learn", "tensorflow", "pytorch",
+        "statistics", "hypothesis testing",
+        "feature engineering", "model evaluation"
+    ],
+
+    "Machine Learning Engineer": [
+        "python", "machine learning", "deep learning",
+        "scikit-learn", "tensorflow", "pytorch",
+        "model deployment", "mlops", "docker",
+        "kubernetes", "api development"
+    ],
+
+    "Business Analyst": [
+        "excel", "sql", "power bi", "tableau",
+        "data analysis", "business intelligence",
+        "requirement gathering", "stakeholder management",
+        "documentation", "reporting"
+    ],
+
+    "AI Engineer": [
+        "python", "machine learning", "deep learning",
+        "nlp", "computer vision",
+        "tensorflow", "pytorch",
+        "model deployment", "cloud services"
+    ],
+
+    "Software Engineer": [
+        "python", "java", "c++", "javascript",
+        "data structures", "algorithms",
+        "object oriented programming",
+        "git", "api development"
+    ],
+
+    "Web Developer": [
+        "html", "css", "javascript",
+        "react", "node.js",
+        "frontend development", "backend development",
+        "api integration", "database management"
+    ],
+
+    "Database Administrator": [
+        "sql", "mysql", "postgresql",
+        "database design", "performance tuning",
+        "backup and recovery", "data security"
+    ],
+
+    "DevOps Engineer": [
+        "linux", "shell scripting", "python",
+        "docker", "kubernetes",
+        "ci/cd pipelines",
+        "aws", "azure", "monitoring"
+    ]
+}
